@@ -4,3 +4,6 @@ body{
 input{
     width:750px !important;
 }
+.message, .error{
+    color:red;
+}

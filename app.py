@@ -64,6 +64,8 @@ def createAccount():
             data = AccountInfo(email, password, dateOfBirth, hobby, color)
             db.session.add(data)
             db.session.commit()
+    else:
+        return render_template('signUp.html', message='You email is alerdy taken. Please enter a differnt email')
     return render_template('login.html')
 
 if __name__ == '__main__':
