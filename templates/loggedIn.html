@@ -10,9 +10,8 @@
 </head>
 <body>
     <h1>You Have Successfully Logged In!</h1>
-    <h2>Hello, </h2>
-    <h3>Your Hobby is</h3>
-    <h3>Your Favortie Color is</h3>
-    <h3>Your Date Of Birth is</h3>
-    <h3></h3>
+    <h2>Hello!</h2>
+    <h3>Your Hobby is {{ user.hobby | safe }}</h3>
+    <h3>Your Favorite Color is {{ user.color | safe }}</h3>
+    <h3>Your Date Of Birth is {{ user.dateOfBirth | safe }}</h3>
 </body>
